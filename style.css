@@ -1,0 +1,200 @@
+@font-face {
+    font-family: "Dimitri";
+    src: url(font/DIMIS.ttf) format("truetype");
+}
+body {
+    min-height: 100%;
+    background-color: #1f1e21;
+}
+button {
+    background-color: #6441a5 !important;
+    color: white !important;
+}
+.navbar {
+    background-color: white;
+    margin-bottom: 0px;
+}
+.jumbotron {
+    background-color: #1f1e21;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+footer {
+    background-color: #1f1e21;
+}
+#stream-text {
+    background: rgba(25, 25, 31, .5);
+    color: white;
+}
+.thumbnail {
+    border-radius: 0px;
+    border: 1px solid white !important;
+}
+h5 {
+    color: white;
+}
+h1 {
+    font-family: "Dimitri";
+    color: #6441a5 !important;
+    margin-bottom: 100px;
+}
+.sidebar-btn {
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    font-size: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.sidebar-btn:hover {
+    background: #eff2ef !important;
+}
+.sub-nav:hover {
+    background: #fff !important;
+}
+.main-nav:focus, .sub-nav:focus {
+    outline: none !important;
+    /* Removes dotted outline when button is clicked */
+}
+
+/* SIDE BAR STYLES */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#wrapper.toggled {
+    padding-left: 250px;
+}
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #fff;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 10%;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.sidebar-nav li {
+    text-align: center;
+    line-height: 40px;
+    max-width: 65px;
+}
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+    max-width: 65px;
+}
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.2);
+}
+.sidebar-nav li a:active, .sidebar-nav li a:focus {
+    text-decoration: none;
+}
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 65px;
+    }
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+    #sidebar-wrapper {
+        width: 65px;
+        overflow: hidden;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+.main-nav:hover {
+    color: #59008f;
+}
+.sub-nav:hover {
+    color: #59008f;
+}
+#sub-menu {
+    display: none;
+}
+#sub-menu li {
+    text-align: right;
+    margin-right: 2px;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+#expand:hover #sub-menu {
+    padding: 0;
+    background: #f4f4f4;
+    display: block;
+    list-style-type: none;
+    font-size: 20px;
+}
+#all {}
+#off {
+    color: #a11818;
+}
+#on {
+    color: #1fa118;
+}
+.stream-offline {
+    border: 3px solid #a11818;
+}
+.stream-online {
+    border: 3px solid #1fa118;
+}
+.thumbnail {
+    padding: 0 !important;
+    border: none !important;
+    background-color: #1f1e21;
+}
+.name-and-game {
+    padding-left: 0;
+    text-align: center;
+    list-style-type: none;
+    font-size: 20px;
+    color: #67646E;
+}
+#author {
+    float: right;
+    color: #67646E;
+    margin-right: 5px;
+}
