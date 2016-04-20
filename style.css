@@ -198,3 +198,9 @@ h1 {
     color: #67646E;
     margin-right: 5px;
 }
+.hide {
+  display: none;
+}
+.visible {
+  display: block;
+}
